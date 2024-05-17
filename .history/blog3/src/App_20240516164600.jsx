@@ -1,0 +1,32 @@
+
+import './App.css'
+import { Button } from './components/ui/button'
+import { Carousel } from './components/ui/carousel'
+import { CarouselDemo } from './components/demo/ CarouselDemo'
+import ShadcnButton from './components/Button.jsx/ShadcnButton'
+import ShadcnInput from './components/input/ShadcnInput'
+
+function App() {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (e) => {
+    setInputValue(e.target.value);
+  };
+
+  const handleClick = () => {
+    alert(`Button clicked! Input value: ${inputValue}`);
+  };
+
+ 
+
+  return (
+    <>
+    <div className='h-full  flex justify-center items-center border-2 flex-col'>
+    <ShadcnButton/>
+    <CarouselDemo></CarouselDemo>
+    </div>
+    </>
+  )
+}
+
+export default App
